@@ -13,6 +13,9 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/5c24c52933.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.css">
 
 
@@ -21,7 +24,7 @@
 </head>
 
 <body>
-    <div class="main container-fluid">
+    <div class="main container-fluid" id="main">
         <header class="row align-items-center justify-content-between">
             <div class="logo ml-4">
                 <a href="#">
@@ -31,19 +34,19 @@
             <nav class="mr-4">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#main">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Services</a>
+                        <a class="nav-link " href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Portfolio</a>
+                        <a class="nav-link " href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contact</a>
+                        <a class="nav-link " href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -53,9 +56,10 @@
                 <h2>Welcome</h2>
             </div>
             <div class="sub-title">
-                <h1 class="text-uppercase"><a href="" class="typewrite" data-period="2000" data-type='[ "I&#39m a web developer", "I&#39m Vinicius Lehmann" ]'>
-                    <span class="wrap"></span>
-                  </a></h1>
+                <h1 class="text-uppercase"><a href="" class="typewrite" data-period="2000"
+                        data-type='[ "I&#39m a web developer", "I&#39m Vinicius Lehmann" ]'>
+                        <span class="wrap"></span>
+                    </a></h1>
             </div>
             <div class="paragraph">
                 <p>It is a long established fact that a reader will be of a page when established fact looking at its
@@ -68,7 +72,7 @@
     </div>
 
 
-    <section>
+    <section id="about">
         <div class="container-fluid">
             <div class="about row align-items-center">
                 <div class="col-lg-6 col-md-12">
@@ -116,13 +120,228 @@
         </div>
     </section>
 
-    <section>
+    <section class="services" id="services">
         <div class="container-fluid">
+            <div class="services-header row justify-content-center">
+                <div class="col-6 text-center mt-5">
+                    <div class="services-title mt-5">
+                        <h1>Our Services</h1>
+                    </div>
+                    <div class="services-sub-title mt-3">
+                        <p>It is a long established fact that a reader will be of a page when established fact
+                            looking at its layout.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-card row justify-content-center">
+                <div class="col-lg-3 col-md-5 col-xs-6 card m-3">
+                    <div class="services-icon mx-auto ">
+                        <i class="fas fa-chart-line fa-5x card-img-top"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="services-card-title card-title">
+                            Graphic Design
+                            <hr>
+                        </div>
+                        <div class="services-card-text card-text">
+                            There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 card m-3">
+                    <div class="services-icon mx-auto ">
+                        <i class="fas fa-pencil-ruler fa-5x card-img-top"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="services-card-title card-title">
+                            Unlimited Color
+                            <hr>
+                        </div>
+                        <div class="services-card-text card-text">
+                            There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 card m-3">
+                    <div class="services-icon mx-auto ">
+                        <i class="fab fa-cloudversify fa-5x card-img-top"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="services-card-title card-title">
+                            Media Marketing
+                            <hr>
+                        </div>
+                        <div class="services-card-text card-text">
+                            There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-card row justify-content-center">
+                <div class="col-lg-3 card m-3">
+                    <div class="services-icon mx-auto ">
+                        <i class="fas fa-wifi fa-5x card-img-top"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="services-card-title card-title">
+                            Unlimited Wifi
+                            <hr>
+                        </div>
+                        <div class="services-card-text card-text">
+                            There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 card m-3">
+                    <div class="services-icon mx-auto ">
+                        <i class="far fa-object-group fa-5x card-img-top"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="services-card-title card-title">
+                            Responsive Design
+                            <hr>
+                        </div>
+                        <div class="services-card-text card-text">
+                            There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 card m-3">
+                    <div class="services-icon mx-auto ">
+                        <i class="fab fa-angellist fa-5x card-img-top"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="services-card-title card-title">
+                            Easy To Customize
+                            <hr>
+                        </div>
+                        <div class="services-card-text card-text">
+                            There are many variations of passages of but the majority have suffered alteration in some
+                            form.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </section>
 
-    </div>
+    <section class="portfolio" id="portfolio">
+        <div class="container-fluid">
+            <div class="portfolio-header row justify-content-center">
+                <div class="col-6 text-center mt-5">
+                    <div class="portfolio-title mt-5">
+                        <h1>Our Works</h1>
+                    </div>
+                    <div class="portfolio-sub-title mt-3">
+                        <p>It is a long established fact that a reader will be of a page when established fact
+                            looking at its layout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container-fluid">
+            <div class="contact-header row justify-content-center">
+                <div class="col-6 text-center mt-5">
+                    <div class="contact-title mt-5">
+                        <h1>Contact Us</h1>
+                    </div>
+                    <div class="contact-sub-title mt-3">
+                        <p>It is a long established fact that a reader will be of a page when established fact
+                            looking at its layout.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col text-center my-4">
+                    <div class="contact-icon p-3">
+                        <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-title-card p-3">
+                        Call Us On
+                    </div>
+                    <div class="contact-title-desc">
+                        +55 31 5698 9898
+                    </div>
+                </div>
+                <div class="col text-center my-4">
+                    <div class="contact-icon p-3">
+                        <i class="fas fa-envelope-open-text fa-3x"></i>
+                    </div>
+                    <div class="contact-title-card p-3">
+                        Email Us At
+                    </div>
+                    <div class="contact-title-desc">
+                        robertdeniro@gmail.com
+                    </div>
+                </div>
+                <div class="col text-center my-4">
+                    <div class="contact-icon p-3">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                    </div>
+                    <div class="contact-title-card p-3">
+                        Visit Us
+                    </div>
+                    <div class="contact-title-desc">
+                        Rua Maceio, 145, Belo Horizonte - MG
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="Your Name*" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Your Email*" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" placeholder="Your Subject..."
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <input type="submit" class="send-button btn btn-custom" value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -135,7 +354,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-
     <script src="../Personal-Site/scripts/main.js"></script>
 </body>
 

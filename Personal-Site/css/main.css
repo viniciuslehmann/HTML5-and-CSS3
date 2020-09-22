@@ -4,6 +4,11 @@
     --dark-red: #9b2232;
     --light-red: #e84a5f;
     --white: #e4e1e1;
+    --muted: #9e9e9e;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +26,24 @@ body {
 
 header {
     height: 12vh;
-    /* background: tomato; */
+    /* z-index: 100000; */
+}
+
+header.sticky {
+    width: 100vw;
+    position: fixed;
+    /* display: flex; */
+    background: rgba(0,0,0,0.4);
+    z-index: 1000000;
+    transition: all 0.5s;
+    
+}
+header.sticky .logo a h2{
+    transition: 0.8s;
+}
+header.sticky .nav {
+    margin-right: 17px;
+    transition: 0.8s;
 }
 
 header h2 {
@@ -33,6 +55,7 @@ header h2 {
 
 .logo a {
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .nav-link {
@@ -138,7 +161,7 @@ header h2 {
 .about .about-paragraph p {
     font-size: .9em;
     font-weight: 200;
-    color: #9e9e9e;
+    color: var(--muted);
     /* letter-spacing: 0.1em; */
     /* line-height: 26px; */
 }
@@ -154,4 +177,146 @@ header h2 {
 
 .fa-facebook-f {
     padding: 0 3px;
+}
+
+.services-header {
+    background-color: var(--black);
+}
+
+.services-title {
+    color: var(--white);
+    border-bottom: 1px solid var(--light-red);
+}
+
+.services-title h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.services-sub-title p {
+    font-size: .9em;
+    font-weight: 200;
+    color: var(--muted);
+}
+
+.services {
+    background: var(--black);
+}
+
+.services-icon {
+    color: var(--light-red);
+}
+.card {
+    background: transparent;
+    color: var(--white);
+    border-color: rgb(68, 68, 68);
+}
+
+.services-icon {
+    margin-top: 10px;
+}
+.services-card-title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.services-card-title hr {
+    /* height: 1px; */
+    border: 1px solid var(--light-red);
+    width: 30%;
+    transition: 0.5s;
+}
+
+.card:hover .card-body .services-card-title hr {
+    width: 60%;
+}
+
+.services-card-text {
+    font-weight: 200;
+    font-size: .9em;
+    text-align: center;
+    color: var(--muted);
+}
+
+.portfolio {
+    background: var(--gray);
+}
+
+.portfolio-title {
+    color: var(--white);
+    border-bottom: 1px solid var(--light-red);
+}
+
+.portfolio-title h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.portfolio-sub-title p {
+    font-size: .9em;
+    font-weight: 200;
+    color: var(--muted);
+}
+
+.contact {
+    background: var(--black);
+}
+
+.contact-title {
+    color: var(--white);
+    border-bottom: 1px solid var(--light-red);
+}
+
+.contact-title h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.contact-sub-title p {
+    font-size: .9em;
+    font-weight: 200;
+    color: var(--muted);
+}
+
+.contact-icon {
+    color: var(--light-red);
+}
+
+.contact-title-card {
+    color: var(--white);
+}
+
+.contact-title-desc {
+    color: var(--muted);
+}
+
+.send-button {
+    border-radius: 30px;
+    padding: 15px 30px;
+    background: var(--light-red);
+    color: var(--white);
+    border-color: var(--light-red);
+    transition: 0.5s;
+}
+
+.send-button:hover {
+    background: none;
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.form-control {
+    border-radius: 0px;
+    border: 1px solid rgb(73, 73, 73);
+    box-shadow: none;
+    background: transparent;
+}
+
+.form-control:focus {
+    border-radius: 0px;
+    border: 1px solid rgb(73, 73, 73);
+    background: transparent;
+    box-shadow: none;
+    outline: 0;
 }
