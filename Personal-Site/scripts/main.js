@@ -1,7 +1,11 @@
+// SCROLL HEADER
+
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 50);
 })
+
+//------------------
 
 
 
@@ -64,16 +68,3 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-
-$(document).ready(function(){
-    $('.grid').isotope({
-        itemSelector: '.item',
-    });
-
-    $('.filter-button-group').on('click', 'li', function(){
-        var filterValue = $(this).attr('data-filter');
-        $('.grid').isotope({filter:filterValue});
-        $('.filter-button-group li').removeClass('active');
-        $(this).addClass('active');
-    })
-})
