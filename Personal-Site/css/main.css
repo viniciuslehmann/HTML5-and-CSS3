@@ -61,9 +61,19 @@ header h2 {
 }
 
 .main-content .sub-title h1 {
-    font-size: 3.5em;
+    font-size: 3.4em;
     margin-top: 15px;
     font-weight: 700;
+}
+
+.wrap {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.typewrite:hover {
+    text-decoration: none;
+    cursor: default;
 }
 
 .main-content .paragraph p {
