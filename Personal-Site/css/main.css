@@ -334,6 +334,30 @@ header h2 {
     background-size: cover;
 }
 
+.front-5 {
+    background: url('../images/site5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-6 {
+    background: url('../images/site6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-7 {
+    background: url('../images/site7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front-8 {
+    background: url('../images/site8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .front{
     z-index: 2;
     backface-visibility: visible;
@@ -350,7 +374,7 @@ header h2 {
 }
 
 .portfolio .container {
-    perspective: 2000px;
+    perspective: 1000px;
 }
 
 
